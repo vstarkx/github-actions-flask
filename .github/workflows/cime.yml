@@ -7,6 +7,12 @@ jobs:
     cime:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout 
+              uses: actions/checkout@v4
+            - name: set up python
+              uses: actions/setup-python@v4
+              with:
+                python-version: '3.19'  
             - name: depandinces
               run: |
                 pip install -r requirements.txt
