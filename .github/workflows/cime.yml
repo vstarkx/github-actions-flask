@@ -9,7 +9,7 @@ jobs:
         steps:
             - name: depandinces
               run: |
-                pip install -r ../../requirements.txt
+                pip install -r requirements.txt
                 pip install pytest
             - name: run py
               run: python pytest    
