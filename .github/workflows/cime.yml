@@ -12,7 +12,7 @@ jobs:
             - name: set up python
               uses: actions/setup-python@v4
               with:
-                python-version: '3.19'  
+                python-version: '3.9'  
             - name: depandinces
               run: |
                 pip install -r requirements.txt
