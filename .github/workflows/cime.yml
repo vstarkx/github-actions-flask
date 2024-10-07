@@ -1,0 +1,15 @@
+name: cime
+
+on: [push,pull_request]
+
+
+jobs:
+    cime:
+        runs-on: ubuntu-latest
+        steps:
+            - name: depandinces
+              run: |
+                python install -r requirements.txt
+                python install pytest
+            - name: run py
+              run: python pytest    
